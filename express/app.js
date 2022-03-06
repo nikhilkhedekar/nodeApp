@@ -11,14 +11,32 @@ const { route2 } = require('./routes/route2');
 //using router
 const mainRouter = require('./router/router');
 
+//using mogoose
+const mongoose = require('mongoose');
+
+//.env
+const dotenv = require('dotenv');
+dotenv.config();
+
 //======================================================================================================================================
+
+
+//using mongoose
+mongoose.connect(process.env.MONGO_URI)
+    .then((res) => {
+        console.log(res);
+    });
+
+mongoose.connection.on('error', error => {
+    console.log('Error', error);
+})
 
 //middleware
 app.use(morgan('dev'));
 
 app.get('/', (req, res) => {
     res.send('Hellow Express');
-}).listen(8080, () => { console.log('Listening On 8080') });
+}).listen(process.env.PORT || 8080, () => { console.log('Listening On 8080') })
 
 //using simple route
 app.get('/route1', getRoute1.route1);
