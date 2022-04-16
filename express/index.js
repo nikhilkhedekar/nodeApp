@@ -1,8 +1,8 @@
-// const app = require('./app');
-// const fileSystem = require('./fileSystem');
+const app = require('./app');
+const fileSystem = require('./fileSystem');
 
 
-// console.log('App', app);
+console.log('App', app);
 // console.log(fileSystem);
 //=================================================================================================================================
 //practice
@@ -18,8 +18,15 @@
 
 //practice 2
 
-const getResponse = require('./expressPractice/expressPractice_02/app');
+// const getResponse = require('./expressPractice/expressPractice_02/app');
 
-getResponse;
-getResponse.routeOne;
-getResponse.routeTwo;
+// getResponse;
+// getResponse.routeOne;
+// getResponse.routeTwo;
+
+
+//========================================================================================================================
+
+// const getRoutes = require('./expressPractice/expressPractice_03/App');
+
+// getRoutes.app
