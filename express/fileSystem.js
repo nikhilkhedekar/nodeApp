@@ -1,6 +1,11 @@
 const fs = require('fs');
+const os = require('os');
+const path = require('path');
 const testfs = 'testfs.txt';
 
+console.log("FS", fs)
+console.log("OS", os);
+console.log("path", path);
 // fs.watch(testfs, () => {
 //     console.log('testfs updated');
 // });

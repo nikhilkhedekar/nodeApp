@@ -1,9 +1,13 @@
-const app = require('./app');
-const fileSystem = require('./fileSystem');
+const App = require("./nodeBasics/app");
+
+App.app;
+//==========================================================================================================
+// const app = require('./app');
+// const fileSystem = require('./fileSystem');
 
 
-console.log('App', app);
-// console.log(fileSystem);
+// console.log('App', app);
+// console.log("fileSystem",fileSystem);
 //=================================================================================================================================
 //practice
 
